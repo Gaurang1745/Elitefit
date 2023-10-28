@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Elitefit/static/css/main.0e075f65.css",
+    "main.js": "/Elitefit/static/js/main.fc016ceb.js",
+    "index.html": "/Elitefit/index.html",
+    "main.0e075f65.css.map": "/Elitefit/static/css/main.0e075f65.css.map",
+    "main.fc016ceb.js.map": "/Elitefit/static/js/main.fc016ceb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0e075f65.css",
+    "static/js/main.fc016ceb.js"
+  ]
+}
