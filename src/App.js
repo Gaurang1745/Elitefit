@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import NavbarWithHeader from "./Components/Navbar";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Showcase from "./Components/Showcase";
+import About from "./Components/About";
+import Testimonials from "./Components/Testimonials";
+import Footer from "./Components/Footer";
+import { useRef } from "react";
 function App() {
+  const aboutRef = useRef(null);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="feedback">FEEDBACK</div>
+      <NavbarWithHeader aboutRef={aboutRef} />
+      <Showcase />
+      <div ref={aboutRef}>
+        <About />
+      </div>
+
+      <Testimonials />
+      <Footer />
     </div>
   );
 }

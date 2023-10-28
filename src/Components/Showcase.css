@@ -1,0 +1,325 @@
+.container {
+  display: flex;
+  justify-content: center;
+  /* margin: 0; */
+  width: 100vw !important;
+  padding: 0;
+  .col-lg-6 {
+    /* display: flex; */
+    padding: 0;
+    height: 600px;
+    .images {
+      width: 50vw;
+      object-fit: contain;
+      overflow: hidden;
+    }
+
+    .texts {
+      position: relative;
+      bottom: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      #circular-text {
+        position: relative;
+        bottom: 30%;
+        background: transparent !important;
+        color: #000;
+        border-radius: 100%;
+        box-shadow: none;
+        padding: 20px;
+        color: #fff;
+        font-family: Oxygen;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        right: 30px;
+      }
+
+      #circular-text span {
+        position: absolute;
+        transform-origin: top left;
+      }
+      #linear-text {
+        position: relative;
+        display: flex;
+        color: #fff;
+        font-family: Pridi;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        bottom: 350px;
+      }
+    }
+  }
+}
+
+.rowx {
+  display: flex;
+  .colx {
+    width: 50vw;
+    /* height: 600px; */
+
+    .images {
+      width: 50vw;
+    }
+    .texts {
+      position: relative;
+      /* bottom: -250px; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      #circular-text {
+        position: absolute;
+        /* bottom: 30%; */
+        background: transparent !important;
+        color: #000;
+        border-radius: 100%;
+        box-shadow: none;
+        padding: 20px;
+        color: #fff;
+        font-family: Oxygen;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-left: 0;
+      }
+
+      #circular-text span {
+        position: absolute;
+        transform-origin: top left;
+      }
+      #linear-text {
+        position: absolute;
+        display: flex;
+        color: #fff;
+        font-family: Pridi;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        bottom: 50px;
+      }
+    }
+    .shop_pens_head {
+      display: flex;
+      position: absolute;
+      margin-top: -180px;
+    }
+    .lower {
+      margin-top: -150px !important;
+    }
+    .shop_pens {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 50vw;
+      .textlines {
+        /* position: absolute; */
+        color: #fff;
+        text-align: center;
+        font-family: Oxygen;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.8px;
+      }
+      .temp {
+        padding-top: 20px;
+        /* position: absolute; */
+      }
+    }
+  }
+}
+
+.rowx {
+  display: flex;
+  .full {
+    width: 100vw;
+    /* height: 600px; */
+
+    .images {
+      width: 100vw;
+    }
+    .overlay_text {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+
+      .textlines {
+        position: absolute;
+        margin-top: -950px;
+        color: #fff;
+        text-align: center;
+        font-family: Oxygen;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 5.52px;
+      }
+      .texts {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: -300px;
+        #circular-text-2 {
+          position: absolute;
+          /* bottom: 30%; */
+          background: transparent !important;
+          color: #000;
+          border-radius: 100%;
+          box-shadow: none;
+          padding: 20px;
+          color: #fff;
+          font-family: Oxygen;
+          font-size: 40px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          padding-left: 0;
+        }
+
+        #circular-text-2 span {
+          position: absolute;
+          transform-origin: top left;
+        }
+        #linear-text {
+          position: absolute;
+          display: flex;
+          color: #fff;
+          font-family: Pridi;
+          font-size: 40px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          bottom: 50px;
+        }
+      }
+      .temp {
+        position: absolute;
+        margin-top: -150px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .rowx {
+    flex-direction: column;
+    .colx {
+      width: 100vw;
+      .images {
+        width: 100vw;
+      }
+      .texts {
+        #circular-text {
+          font-size: 24px;
+        }
+        #linear-text {
+          font-size: 24px;
+          bottom: 30px;
+        }
+      }
+      .shop_pens_head {
+        margin-top: -125px;
+      }
+      .lower {
+        margin-top: -100px !important;
+      }
+      .shop_pens {
+        width: 100vw;
+        .textlines {
+          font-size: 16px;
+          letter-spacing: 1.2px;
+        }
+        .temp {
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+  .rev {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .rowx {
+    display: flex;
+    .full {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      .overlay_text {
+        position: relative;
+        height: 324px;
+        background-color: #000;
+        .textlines {
+          display: flex;
+          position: absolute;
+          bottom: 270px;
+          color: #fff;
+          text-align: center;
+          font-family: Oxygen;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          letter-spacing: 3.68px;
+        }
+        .texts {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          position: relative;
+          margin-top: 130px;
+          #circular-text-2 {
+            position: relative;
+            /* bottom: 30%; */
+            background: transparent !important;
+            color: #fff;
+            font-family: Oxygen;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            padding-left: 0;
+          }
+
+          #circular-text-2 span {
+            position: absolute;
+            transform-origin: top left;
+          }
+          #linear-text {
+            position: relative;
+            display: flex;
+            color: #fff;
+            font-family: Pridi;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            bottom: 200px;
+          }
+        }
+        .temp {
+          bottom: 66px;
+        }
+      }
+    }
+  }
+}
